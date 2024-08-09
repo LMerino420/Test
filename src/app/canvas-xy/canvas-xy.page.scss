@@ -26,8 +26,7 @@
           justify-content: center;
           input[type="range"] {
             writing-mode: vertical-lr;
-            direction: rtl;
-            vertical-align: middle;
+            direction: ltr;
           }
         }
       }
@@ -40,7 +39,6 @@
           input[type="range"] {
             writing-mode: horizontal-tb;
             direction: ltr;
-            vertical-align: middle;
             width: 80%;
           }
         }
@@ -51,8 +49,8 @@
 
 canvas {
   border: 1px solid green;
-  height: 90%;
-  width: 75%;
+  width: 70%;
+  height: 100%;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
