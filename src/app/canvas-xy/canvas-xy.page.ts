@@ -12,7 +12,6 @@ export class CanvasXyPage {
   constructor() {}
 
   ionViewWillEnter() {
-    console.log('WILL ENTER');
     this.drawCanvas();
   }
 
