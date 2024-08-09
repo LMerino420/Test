@@ -1,0 +1,62 @@
+.cnt-canvas {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 95%;
+
+  .cnt-l,
+  .cnt-r {
+    border: 1px solid black;
+    padding: 15px;
+  }
+
+  .cnt-l {
+    .ly-grid {
+      height: 100%;
+      width: 100%;
+      .rw-top {
+        height: 90%;
+        .cnv-cnt {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .rg-Y {
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          input[type="range"] {
+            writing-mode: vertical-lr;
+            direction: rtl;
+            vertical-align: middle;
+          }
+        }
+      }
+      .rw-down {
+        height: 10%;
+        .rg-X {
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          input[type="range"] {
+            writing-mode: horizontal-tb;
+            direction: ltr;
+            vertical-align: middle;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+canvas {
+  border: 1px solid green;
+  height: 90%;
+  width: 75%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
